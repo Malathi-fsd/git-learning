@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 10px;
+}
+span{
+    color: red;
+}
+body{
+    padding: 20px;
+}
+.light{
+    color: hwb(0 50% 50%);
+}
+.word-space{
+    word-spacing: 140px;
+}
+.table-1,.table-3{
+    background-color: rgba(128, 128, 128,0.2);
+
+}
+.one,.two,.three{
+    text-align: center;
+}
+.table{
+    border: 3px solid gray;
+    padding: 100px;
+}
+.wrap{
+    word-wrap: break-word;
+}
+@media screen and (min-width:768px){
+    .one,.two,.three{
+        word-wrap: break-word;
+    }
+}

@@ -1,0 +1,7 @@
+.column{
+    column-count: 4;
+    column-width: 100px;
+    column-gap: 2rem;
+    column-rule: 3px solid black;
+    
+}
