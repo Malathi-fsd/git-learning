@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Form</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            h1{
+                text-align: center;
+                background-color: rgb(1, 1, 57);
+                color: whitesmoke;
+            }
+            #form{
+                margin-top: 20px;
+                margin-left: 20px;
+                padding: 50px;
+                font-size: 20px;
+                background-color: rgba(128, 128, 128, 0.3);
+                width: 90%;
+                border-radius: 10px;
+            }
+            input{
+                border: 2px solid grey;
+                padding: 3px;
+                border-radius: 5px;
+            }
+            #reset{
+                padding: 3px;
+                border: 1px solid gray;                
+                border-radius: 4px;
+                width: 60px;
+            }
+            #submit{
+                padding: 3px;
+                border: 1px solid gray;                
+                border-radius: 4px;
+                width: 60px;
+            }
+            table, th, td{
+                border: 1px solid white;
+                border-collapse: collapse;
+                padding: 10px;
+                margin: 10px;  
+                width: 50%;         
+            }
+            @media (max-width:768px) {
+                #form input {
+                    width: 100%;
+                }
+                .tables {
+                    width: 100%;
+                    word-wrap: break-word;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>DOM Manipulation with HTML form</h1>
+        <div id="form">
+            <label>
+                 First name : <input type="text" id="firstname"> <br><br>
+                 Last name : <input type="text" id="lastname"> <br><br>
+                 Address : <input type="text" id="address"> <br><br>
+                 Pincode : <input type="text" id="pincode"> <br><br>
+                 Gender : <input type="radio"  class="gender" name="gender" value="male">Male 
+                          <input type="radio" class="gender" name="gender" value="female">Female <br><br>
+                 Choice of Foods : <select name="food" min="2" multiple id="selectFoods">
+                                        <option>--select atleast two--</option>
+                                        <option value="briyani">Briyani</option>
+                                        <option value="friedrice">Friedrice</option>
+                                        <option value="noodles">Noodles</option>
+                                        <option value="curdrice">Curdrice</option>
+                                        <option value="meal">Meal</option>
+                                    </select> <br><br>
+                State : <input type="text" id="state"> <br><br>
+                Country : <input type="text" id="country"> <br><br>
+                <button id="reset">reset</button>
+                <button id="submit">submit</button>
+
+            </label><br><br><br>    
+            <table class="tables">
+                <tr>
+                    <th>Firstname</th>
+                    <td id="inputlist1"></td>
+                </tr>
+                <tr>
+                    <th>Lastname</th>
+                    <td id="inputlist2"></td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td id="inputlist3"></td>
+                </tr>
+                <tr>
+                    <th>Pincode</th>
+                    <td id="inputlist4"></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td id="inputlist5"></td>
+                </tr>
+                <tr>
+                    <th>Selected foods</th>
+                    <td id="inputlist6"></td>
+                </tr>
+                <tr>
+                    <th>State</th>
+                    <td id="inputlist7"></td>
+                </tr>
+                <tr>
+                    <th>Country</th>
+                    <td id="inputlist8"></td>
+                </tr>
+                
+            </table>
+            
+        </div>  
+        <script src="./HTMLform.js"></script>
+    </body>
+</html>
